@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>VR Fanpage - Contacto</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>V RISING FANPAGE</h1>
+        <div class="menu_bar">
+            <label for="boton_menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="boton_menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./media.html">Media</a></li>
+                    <li><a href="./caracteristicas.html">Características</a></li>
+                    <li><a href="./requisitos.html">Requisitos</a></li>
+                    <li><a href="./contacto.html" id="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+    <main>
+        <section class="formulario">
+            <article>
+                <form action="#">
+                     <fieldset>
+                        <legend>Formulario De Contacto</legend>                        
+                        <p>¿Tienes alguna duda sobre el juego? <strong class="resalta">¡Escríbenos!</strong></p>
+                        <img src="./assets/img/logo.png" alt="">
+                        <div class="text">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" autocomplete="off">
+                        </div>
+                         <div class="text">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="off">                        
+                        </div>
+                        <div class="text">
+                         <label for="plataforma">Plataforma de Streaming Preferida</label>
+                            <select name="plataforma" id="plataforma">
+                                <option value="you">Youtube</option>
+                                <option value="twi">Twitch</option>
+                                <option value="face">Facebook</option>
+                            </select>
+                        </div>
+                        <div class="text">
+                            <label for="consulta">Escribe tu Consulta</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>    
+                        </div>
+                        <div class="text">
+                            <label for="checkbox" class="check">¿Quieres recibir nuestro NewsLetter?</label>
+                            <input type="checkbox" name="news" id="news">  
+                        </div>
+                        <div class="botones">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Reset</button>
+                        </div>                                    
+                     </fieldset>
+                </form>                   
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+        </div>           
+        <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
+    </footer>
+  </div>  
+</body>
+</html>
