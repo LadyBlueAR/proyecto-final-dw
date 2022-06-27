@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>VR Fanpage - Requisitos</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
     </header>
     <main>
         <section class="tablas">
-            <article>
+            <article class="wow animate__animated animate__fadeInDown">
                 <h4>MÍNIMO</h4>
                 <table>
                     <tr>
@@ -66,7 +67,7 @@
                     </tr> 
                 </table>
             </article>
-            <article>
+            <article class="wow animate__animated animate__fadeInUp">
                 <h4>RECOMENDADO</h4>
                 <table>
                     <tr>
@@ -105,7 +106,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="wow animate__animated animate__fadeInUp">
         <div class="redes">
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
@@ -113,6 +114,10 @@
         </div>           
         <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
     </footer>
-  </div>  
+  </div>
+  <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>   
 </body>
 </html>

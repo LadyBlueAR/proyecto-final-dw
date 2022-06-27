@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>VR Fanpage</title>
 </head>
 <body>
@@ -29,9 +30,9 @@
     </header>
     <main>
         <section>
-            <article class="banner" >
-                <img src="./assets/img/home.png" alt="No se puede mostrar la imagen">
-                <p><strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>.
+            <article class="banner">
+                <img src="./assets/img/home.png" alt="No se puede mostrar la imagen" class="wow animate__animated animate__fadeInDown">
+                <p class="wow animate__animated animate__fadeInUp"><strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>.
                 Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar 
                 para <strong class="resalta">sobrevivir</strong>. Alza 
                 tu <strong class="resalta">castillo</strong> y progresa en un mundo abierto lleno de 
@@ -40,12 +41,12 @@
                 </p>
             </article>
             <article class="enlaces">
-                    <a href="media.html #trailer"><i class="fa-brands fa-youtube"></i>&nbsp;Tráiler</a>
-                    <a href="#"><i class="fa-brands fa-steam-square"></i>&nbsp;Cómpralo</a>
+                    <a href="media.html #trailer" class="wow animate__animated animate__fadeInLeft"><i class="fa-brands fa-youtube"></i>&nbsp;Tráiler</a>
+                    <a href="#" class="wow animate__animated animate__fadeInRight"><i class="fa-brands fa-steam-square"></i>&nbsp;Cómpralo</a>
             </article>
         </section>       
     </main>
-    <footer>
+    <footer class="wow animate__animated animate__fadeInUp">
         <div class="redes">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
@@ -53,6 +54,10 @@
         </div>           
         <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
     </footer>
-  </div>  
+  </div>
+  <script src="./assets/js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>  
 </body>
 </html>
