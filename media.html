@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">    
     <title>VR Fanpage - Media</title>
 </head>
 <body>
@@ -31,26 +32,26 @@
         <section>
             <article class="videos">
                 <h2 class="media_titulo">Tráiler</h2>
-                <iframe src="https://www.youtube.com/embed/yPfeBPyW6X8"></iframe>
-                <h2 class="media_titulo">Gameplay</h2>
-                <iframe src="https://www.youtube.com/embed/C7KTI94LzI8"></iframe>
+                <iframe src="https://www.youtube.com/embed/yPfeBPyW6X8"  class="wow animate__animated animate__fadeInLeft"></iframe>
+                <h2 class="media_titulo wow animate__fadeInRight">Gameplay</h2>
+                <iframe src="https://www.youtube.com/embed/C7KTI94LzI8" class="wow animate__animated animate__fadeInRight"></iframe>
             </article>
-            <article class="imagenes">
+            <article class="imagenes wow wow animate__fadeInLeft">
                 <h2 class="media_titulo">Screenshots</h2>
                 <div class="contenedor_img">
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/alzaCastillo.png" alt="No se puede mostrar la imagen">
                         <p>Captura Humanos</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/coopera.png" alt="No se puede mostrar la imagen">
                         <p>Coopera Con Tus Amigos</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/dominaVampiro.png" alt="No se puede mostrar la imagen">
                         <p>Combate a Tus Enemigos</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/gotico.png" alt="No se puede mostrar la imagen">
                         <p>Explora el Mundo Gótico</p>
                     </div>              
@@ -59,19 +60,19 @@
             <article class="imagenes">
                 <h2 class="media_titulo">Artwork</h2>
                 <div class="contenedor_img">
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/castle.png" alt="No se puede mostrar la imagen">
                         <p>Construcción de Castillos</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/combate.png" alt="No se puede mostrar la imagen">
                         <p>Enemigos Aterradores</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/explora.png" alt="No se puede mostrar la imagen">
                         <p>Mundo Abierto</p>
                     </div>
-                    <div class="contenedor_item">
+                    <div class="contenedor_item wow animate__animated animate__zoomIn">
                         <img src="./assets/img/trono.png" alt="No se puede mostrar la imagen">
                         <p>Dominio</p>
                     </div>
@@ -79,7 +80,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="wow animate__animated animate__fadeInUp">
         <div class="redes">
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
@@ -87,6 +88,10 @@
         </div>           
         <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
     </footer>
-  </div>  
+  </div>
+  <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>  
 </body>
 </html>
