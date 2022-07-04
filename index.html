@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>VR Fanpage</title>
@@ -21,8 +23,7 @@
                 <ul>
                     <li><a href="./index.html" id="active">Home</a></li>
                     <li><a href="./media.html">Media</a></li>
-                    <li><a href="./caracteristicas.html">Características</a></li>
-                    <li><a href="./requisitos.html">Requisitos</a></li>
+                    <li><a href="./requisitos.html">Wiki</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -31,29 +32,37 @@
     <main>
         <section>
             <article class="banner">
-                <img src="./assets/img/home.png" alt="No se puede mostrar la imagen" class="wow animate__animated animate__fadeInDown">
-                <p class="wow animate__animated animate__fadeInUp"><strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>.
-                Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar 
-                para <strong class="resalta">sobrevivir</strong>. Alza 
-                tu <strong class="resalta">castillo</strong> y progresa en un mundo abierto lleno de 
-                misterios que cambia constantemente. Gana <strong class="resalta">aliados</strong> en línea
-                y <strong class="resalta">conquista</strong> las tierras de los vivos. 
-                </p>
+                <img src="./assets/img/home.png" alt="No se puede mostrar la imagen" class="wow animate__animated animate__fadeInDown">                
             </article>
-            <article class="enlaces">
-                    <a href="media.html #trailer" class="wow animate__animated animate__fadeInLeft"><i class="fa-brands fa-youtube"></i>&nbsp;Tráiler</a>
-                    <a href="#" class="wow animate__animated animate__fadeInRight"><i class="fa-brands fa-steam-square"></i>&nbsp;Cómpralo</a>
+            <article class="enlaces d-flex flex-column align-items-center">
+                    <p class="wow animate__animated animate__fadeInUp text-center p-2 m-3"><strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>.
+                        Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar 
+                        para <strong class="resalta">sobrevivir</strong>. Alza 
+                        tu <strong class="resalta">castillo</strong> y progresa en un mundo abierto lleno de 
+                        misterios que cambia constantemente. Gana <strong class="resalta">aliados</strong> en línea
+                        y <strong class="resalta">conquista</strong> las tierras de los vivos. 
+                    </p>
+                    <button type="button" class="btn btn-outline-dark p-2 m-2 col-lg-4 col-10 wow animate__animated animate__fadeInLeft">
+                        <a href="./media.html"><i class="fa-brands fa-youtube"></i>&nbsp;Tráiler</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark p-2 m-2 col-lg-4 col-10 wow animate__animated animate__fadeInRight">
+                        <a href="https://store.steampowered.com/app/1604030/V_Rising/" target="_blank"><i class="fa-brands fa-steam-square"></i>&nbsp;Steam</a>
+                    </button>                    
             </article>
-        </section>       
+        </section>
     </main>
-    <footer class="wow animate__animated animate__fadeInUp">
-        <div class="redes">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-        </div>           
-        <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
-    </footer>
+    <footer class="d-flex justify-content-between align-items-center py-3 my-4 p-2 bd-top wow animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="col-md-4 d-flex align-items-center">          
+          <span>© 2021 Copyright. Todos Los Derechos Reservados</span>
+        </div>    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-nowrap">
+          <li class="ms-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+        </ul>
+      </footer>    
   </div>
   <script src="./assets/js/wow.min.js"></script>
   <script>
