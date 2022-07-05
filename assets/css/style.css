@@ -185,6 +185,38 @@ main section {
     font-family: "Tiro", Arial, Helvetica;
     color: #CEE4F2;
 }
+/*----------REQUISITOS---------*/
+.tabla {
+    background-image: url(../img/form_bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 10px;
+    margin-top: 5%;
+    text-align: left;
+}
+.tabla-req {
+    background-image: url(../img/requisitos_recomendados.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 10px;
+    text-align: right;
+}
+.tabla h1, .tabla-req h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #7e2f47;
+    font-family: "Medieval", Arial, Helvetica;
+}
+.tabla span, .tabla-req span {
+    color: #CEE4F2;
+    font-size: 14px;
+}
+.req-span {
+    display: flex;
+    flex-direction: column;
+}
 /*----------CONTACTO---------*/
 #body-contacto {
     background-image: url(../img/form_bg.png);
@@ -266,4 +298,22 @@ footer a:hover {
     .formularios {
         margin: 7% 0 0 12% !important;        
     }
+    .requisitos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tabla-req {
+        border-left: 2px solid black;
+        margin-top: 5%;
+    }
+    .tabla, .tabla-req {
+        height: 800px;
+    }
+    .tabla h1, .tabla-req h1 {
+        font-size: 60px;
+    }
+    .tabla span, .tabla-req span {
+        margin-top: 30px;
+        font-size: 20px;
+    } 
 }
