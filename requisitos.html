@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>VR Fanpage - Requisitos</title>
-</head>
-<body>
-  <div id="wrapper">
-    <header>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
         <h1>V RISING FANPAGE</h1>
         <div class="menu_bar">
-            <label for="boton_menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="boton_menu">
-            <nav class="menu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./media.html">Media</a></li>
-                    <li><a href="./caracteristicas.html">Características</a></li>
-                    <li><a href="./requisitos.html" id="active">Requisitos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>
-    <main>
-        <section class="tablas">
-            <article class="wow animate__animated animate__fadeInDown">
-                <h4>MÍNIMO</h4>
-                <table>
-                    <tr>
-                        <th>Componente</th>
-                        <th>Requisito</th>
-                    </tr>
-                    <tr>
-                        <td>SO</td>
-                        <td>Windows 10 64 bit</td>
-                    </tr>
-                    <tr>
-                        <td>Procesador</td>
-                        <td>Intel Core i5-6600, 3.3 GHz o AMD Ryzen 5 1500X, 3.5 GHz</td>
-                    </tr>
-                    <tr>
-                        <td>Memoria</td>
-                        <td>12 GB de RAM</td>
-                    </tr>
-                    <tr>
-                        <td>Gráficos</td>
-                        <td>NVIDIA GeForce GTX 750 Ti, 2 GB o AMD Radeon R7 360, 2 GB</td>
-                    </tr>
-                    <tr>
-                        <td>DirectX</td>
-                        <td>Versión 11</td>
-                    </tr>
-                    <tr>
-                        <td>Red</td>
-                        <td>Conexión de banda ancha a Internet</td>
-                    </tr>
-                    <tr>
-                        <td>Almacenamiento</td>
-                        <td>7 GB de espacio disponible</td>
-                    </tr> 
-                </table>
-            </article>
-            <article class="wow animate__animated animate__fadeInUp">
-                <h4>RECOMENDADO</h4>
-                <table>
-                    <tr>
-                        <th>Componente</th>
-                        <th>Requisito</th>
-                    </tr>
-                    <tr>
-                        <td>SO</td>
-                        <td>Windows 10 64 bit</td>
-                    </tr>
-                    <tr>
-                        <td>Procesador</td>
-                        <td>Intel Core i5-11600K, 3.9 GHz o AMD Ryzen 5 5600X, 3.7 GHz</td>
-                    </tr>
-                    <tr>
-                        <td>Memoria</td>
-                        <td>16 GB de RAM</td>
-                    </tr>
-                    <tr>
-                        <td>Gráficos</td>
-                        <td>NVIDIA GeForce GTX 1070, 8 GB o AMD Radeon RX 590, 8 GB</td>
-                    </tr>
-                    <tr>
-                        <td>DirectX</td>
-                        <td>Versión 11</td>
-                    </tr>
-                    <tr>
-                        <td>Red</td>
-                        <td>Conexión de banda ancha a Internet</td>
-                    </tr>
-                    <tr>
-                        <td>Almacenamiento</td>
-                        <td>12 GB de espacio disponible</td>
-                    </tr> 
-              </table>
-            </article>
-        </section>
-    </main>
-    <footer class="wow animate__animated animate__fadeInUp">
-        <div class="redes">
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-        </div>           
-        <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
-    </footer>
-  </div>
-  <script src="./assets/js/wow.min.js"></script>
+          <label for="boton_menu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" id="boton_menu">
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./media.html">Media</a>
+              </li>
+              <li>
+                <a href="./requisitos.html" id="active">Requisitos</a>
+              </li>
+              <li>
+                <a href="./dlc.html">DLC</a>
+              </li>
+              <li>
+                <a href="./contacto.html">Contacto</a>
+              </li>
+              </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="requisitos">
+          <!--Tabla Minimo-->
+          <div class="tabla wow animate__animated animate__fadeInLeft">
+            <h1 class="wow animate__animated animate__fadeIn animate__delay-1s">MÍNIMO</h1>
+            <div class="req-span">
+              <div class="req-span">
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Windows 10 64 bit</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">i5-6600, 3.3 GHz o AMD Ryzen 5 1500X, 3.5 GHz</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">12 GB de RAM</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">GTX 750 Ti, 2 GB o AMD Radeon R7 360, 2 GB</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Versión 11</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Conexión de banda ancha a Internet</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">7 GB de espacio disponible</span>
+              </div>
+            </div>
+          </div>
+          <!--Tabla Recomendados-->
+          <div class="tabla-req wow animate__animated animate__fadeInRight">
+            <h1 class="wow animate__animated animate__fadeIn animate__delay-1s">RECOMENDADO</h1>
+            <div class="req-span">
+              <div class="req-span">
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Windows 10 64 bit</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">i5-6600, 3.3 GHz o AMD Ryzen 5 1500X, 3.5 GHz</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">12 GB de RAM</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">GTX 750 Ti, 2 GB o AMD Radeon R7 360, 2 GB</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Versión 11</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">Conexión de banda ancha a Internet</span>
+                <br>
+                <span class="wow animate__animated animate__fadeIn animate__delay-2s">7 GB de espacio disponible</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="d-flex justify-content-between align-items-center py-3 my-4 p-2 bd-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span>© 2021 Copyright. Todos Los Derechos Reservados</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-nowrap">
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-youtube-square"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./assets/js/wow.min.js"></script>
     <script>
-        new WOW().init();
-    </script>   
-</body>
+      new WOW().init();
+    </script>
+  </body>
 </html>

@@ -1,63 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/37e81e6b91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/img/v-solid.svg" type="image/x-icon">
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>VR Fanpage</title>
-</head>
-<body>
-  <div id="wrapper">
-    <header>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
         <h1>V RISING FANPAGE</h1>
         <div class="menu_bar">
-            <label for="boton_menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="boton_menu">
-            <nav class="menu">
-                <ul>
-                    <li><a href="./index.html" id="active">Home</a></li>
-                    <li><a href="./media.html">Media</a></li>
-                    <li><a href="./caracteristicas.html">Características</a></li>
-                    <li><a href="./requisitos.html">Requisitos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>
-    <main>
+          <label for="boton_menu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" id="boton_menu">
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="./index.html" id="active">Home</a>
+              </li>
+              <li>
+                <a href="./media.html">Media</a>
+              </li>
+              <li>
+                <a href="./requisitos.html">Requisitos</a>
+              </li>
+              <li>
+                <a href="./dlc.html">DLC</a>
+              </li>
+              <li>
+                <a href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
         <section>
-            <article class="banner">
-                <img src="./assets/img/home.png" alt="No se puede mostrar la imagen" class="wow animate__animated animate__fadeInDown">
-                <p class="wow animate__animated animate__fadeInUp"><strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>.
-                Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar 
-                para <strong class="resalta">sobrevivir</strong>. Alza 
-                tu <strong class="resalta">castillo</strong> y progresa en un mundo abierto lleno de 
-                misterios que cambia constantemente. Gana <strong class="resalta">aliados</strong> en línea
-                y <strong class="resalta">conquista</strong> las tierras de los vivos. 
-                </p>
-            </article>
-            <article class="enlaces">
-                    <a href="media.html #trailer" class="wow animate__animated animate__fadeInLeft"><i class="fa-brands fa-youtube"></i>&nbsp;Tráiler</a>
-                    <a href="#" class="wow animate__animated animate__fadeInRight"><i class="fa-brands fa-steam-square"></i>&nbsp;Cómpralo</a>
-            </article>
-        </section>       
-    </main>
-    <footer class="wow animate__animated animate__fadeInUp">
-        <div class="redes">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-        </div>           
-        <p>&copy;Copyright 2022. Todos Los Derechos Reservados</p>        
-    </footer>
-  </div>
-  <script src="./assets/js/wow.min.js"></script>
-  <script>
+          <article class="banner">
+            <img src="./assets/img/home.png" alt="No se puede mostrar la imagen" class="wow animate__animated animate__fadeInDown">
+          </article>
+          <article class="enlaces d-flex flex-column align-items-center">
+            <p class="wow animate__animated animate__fadeInUp text-center p-2 m-3">
+              <strong class="resalta">Despierta</strong> siendo un <strong class="resalta">vampiro</strong>. Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar para <strong class="resalta">sobrevivir</strong>. Alza tu <strong class="resalta">castillo</strong> y progresa en un mundo abierto lleno de misterios que cambia constantemente. Gana <strong class="resalta">aliados</strong> en línea y <strong class="resalta">conquista</strong> las tierras de los vivos.
+            </p>
+            <button type="button" class="btn btn-outline-dark p-2 m-2 col-lg-4 col-10 wow animate__animated animate__fadeInLeft">
+              <a href="./media.html">
+                <i class="fa-brands fa-youtube"></i>&nbsp;Tráiler </a>
+            </button>
+            <button type="button" class="btn btn-outline-dark p-2 m-2 col-lg-4 col-10 wow animate__animated animate__fadeInRight">
+              <a href="https://store.steampowered.com/app/1604030/V_Rising/" target="_blank">
+                <i class="fa-brands fa-steam-square"></i>&nbsp;Steam </a>
+            </button>
+          </article>
+        </section>
+        <section class="home-info">
+          <article class="info">
+            <img src="./assets/img/castle.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item item1 wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Una Experiencia de Supervivencia Vampírica</h3>
+              <p class="text-center tx-shadow">Despierta siendo un <strong class="resalta">vampiro</strong> debilitado tras siglos de letargo. Parte de cacería <strong class="resalta">en busca de sangre</strong> para recuperar tu fuerza, a la par vez que te escondes de la abrasadora luz solar. <strong class="resalta">Reconstruye tu castillo</strong> y transforma a humanos en tus leales sirvientes en una misión para alzar tu imperio vampírico. <strong class="resalta">aliados o enemigos</strong> jugando en linea o juega sólo. </p>
+            </div>
+          </article>
+          <article class="info info-reverse">
+            <img src="./assets/img/explora.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Un mundo abierto de estilo Gótico</h3>
+              <p class="text-center tx-shadow">Explora un <strong class="resalta">vasto mundo</strong> a rebosar de horrores mitólogicos y peligro. Viaja a través de exhuberantes bosques, grandes campos rurales y oscuras cavernas para descubrir <strong class="resalta">valiosos recursos</strong>. en este mundo junto a tus camaradas vampíricos o sé el cazador solitario mientras <strong class="resalta">saqueas</strong> aldeas, asaltas a bandidos y te adentras en los dominios de bestias sobrenaturales. </p>
+            </div>
+          </article>
+          <article class="info">
+            <img src="./assets/img/luz.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Teme la luz - Regenta la noche</h3>
+              <p class="text-center tx-shadow">Permanece en las <strong class="resalta">sombras durante el día</strong>, o la abrasadora luz del sol te reducirá a cenizas. <strong class="resalta">Merodea durante la noche</strong> y acecha a tus víctimas en la oscuridad. Como vampiro, debes saciar tu sed de sangre mientras planeas que estrategias llevar a cabo durante el día o la noche. </p>
+            </div>
+          </article>
+          <article class="info info-reverse">
+            <img src="./assets/img/alzaCastillo.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Alza tu castillo</h3>
+              <p class="text-center tx-shadow">
+                <strong class="resalta">Recolecta recursos</strong> y descubre técnicas ancestrales para obtener poderes oscuros. Usa los conocimientos adquiridos para construir un castillo donde poder atesorar tu botín y alzar tu ejército de las tinieblas. <strong class="resalta">Personaliza tu dominio</strong>, exhibe tu estilo vampírico y asegúrate de crear ataúdes para el reposo de tus sirvientes y amigos. <strong class="resalta">Fortalece tu castillo</strong> y proteje tus preciados tesoros de vampiros rivales.
+              </p>
+            </div>
+          </article>
+          <article class="info">
+            <img src="./assets/img/grave.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Compite o Coopera</h3>
+              <p class="text-center tx-shadow">Viaja en solitario o explora el mundo <strong class="resalta">junto a tus amigos</strong>. Luchar codo con codo junto a otros vampiros te dará la ventaja para conquistar las mayores amenazas de Vardorant. <strong class="resalta">Asedia los castillos</strong> de otros jugadores o toma el camino diplomático en un juego de sangre, poder y traición. Compite o coopera, la elección está en tus manos. </p>
+            </div>
+          </article>
+          <article class="info info-reverse">
+            <img src="./assets/img/combate.png" alt="No Se puede mostrar la imagen">
+            <div class="info-item wow animate__animated animate__fadeInUp">
+              <h3 class="text-center tx-shadow">Domina a tu Vampiro</h3>
+              <p class="text-center tx-shadow">
+                <strong class="resalta">Aprende y domina</strong> un arsenal de armas mortíferas y poderes impíos. En V Rising apuntas tus "skill-shots" con el cursor del ratón y esquivas proyectiles usando precisos controles WASD, sin movimiento por click. <strong class="resalta">Personaliza tu vapiro</strong> a la medida de tu estilo de juego al combinar armas con una variedad de hechizos obtenidos al derrotar poderosos enemigos. Domina tus habilidades y desata tus poderes malignos.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="d-flex justify-content-between align-items-center py-3 my-4 p-2 bd-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span>© 2021 Copyright. Todos Los Derechos Reservados</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-nowrap">
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-youtube-square"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="#">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
       new WOW().init();
-  </script>  
-</body>
+    </script>
+  </body>
 </html>
