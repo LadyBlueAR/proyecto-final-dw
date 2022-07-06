@@ -5,7 +5,7 @@
   "name": "proyecto_final_dw",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed assets/scss/estilos.scss assets/css/style.css"
+    "build:css": "node-sass --output-style compressed assets/scss/estilos.scss assets/css/estilos.css"
   },
   "version": "1.0.0",
   "devDependencies": {
