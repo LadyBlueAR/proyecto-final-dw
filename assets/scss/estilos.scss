@@ -54,7 +54,7 @@ main {
   color: #CEE4F2;
 
   a {
-    color: #CEE4F2;
+    @extend .enlaces;
     text-decoration: none;
   }
 }
@@ -100,4 +100,59 @@ main {
   p {
     line-height: 2;
   }
+}
+/*---Sitios Relacionados---*/
+.sitios {
+  display: flex;
+  justify-content: space-evenly;
+}
+$sitios: (
+    foro: #7e2f47,
+    devLog: #CEE4F2,
+    wiki: #454746
+
+);
+.btn-sitios {
+  color: #CEE4F2;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  letter-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.5s;
+
+  &:hover {
+    color: #CEE4F2;
+    transform: scale(1.1);
+  }
+}
+@each $sitio, $color in $sitios {
+    .btn-#{$sitio} {
+        @extend .btn-sitios;
+        color: $color;       
+    }
+}
+/*---Parches---*/
+.parches {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@mixin nota-parche ($font-color, $background-color) {
+  @extend .btn-sitios;
+  margin-top: 20px;
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.parche-actual {
+  @include nota-parche(map-get($sitios,devLog), #cee4f223)
+}
+
+.parche-pasado {
+  @include nota-parche(map-get($sitios,wiki), #cee4f207)
 }
