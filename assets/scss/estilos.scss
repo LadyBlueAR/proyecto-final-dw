@@ -1,0 +1,158 @@
+@import '_header.scss';
+
+/*----------HOME----------*/
+main {
+  grid-area: main;
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*---Banner---*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-bottom: 1px solid #cee4f283;
+    width: 100%;
+  }
+
+  p {
+    color: #CEE4F2;
+    font-size: 18px;
+    margin: 40px 20px;
+    text-align: justify;
+  }
+}
+
+/*---Imagenes---*/
+
+.contenedor-home {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  h5 {
+    color: #7e2f47;
+  }
+}
+
+.home-item1 {
+  background-image: url(../img/gotico.png);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  opacity: 50%;
+}
+
+/*---Enlaces---*/
+
+.enlaces {
+  color: #CEE4F2;
+
+  a {
+    @extend .enlaces;
+    text-decoration: none;
+  }
+}
+
+.btn-outline-dark {
+  border: none;
+  box-shadow: 5px 5px 5px #7e2f47;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.363);
+  }
+}
+
+/*---Info---*/
+
+.info {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  margin: 20px 0;
+
+  img {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 50%;
+    width: 100%;
+  }
+}
+
+.info-item {
+  color: #CEE4F2;
+  margin: 10px;
+  position: absolute;
+
+  h3 {
+    color: #7e2f47;
+    font-family: "Medieval", Arial, Helvetica;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    line-height: 2;
+  }
+}
+/*---Sitios Relacionados---*/
+.sitios {
+  display: flex;
+  justify-content: space-evenly;
+}
+$sitios: (
+    foro: #7e2f47,
+    devLog: #CEE4F2,
+    wiki: #454746
+
+);
+.btn-sitios {
+  color: #CEE4F2;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  letter-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.5s;
+
+  &:hover {
+    color: #CEE4F2;
+    transform: scale(1.1);
+  }
+}
+@each $sitio, $color in $sitios {
+    .btn-#{$sitio} {
+        @extend .btn-sitios;
+        color: $color;       
+    }
+}
+/*---Parches---*/
+.parches {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@mixin nota-parche ($font-color, $background-color) {
+  @extend .btn-sitios;
+  margin-top: 20px;
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.parche-actual {
+  @include nota-parche(map-get($sitios,devLog), #cee4f223)
+}
+
+.parche-pasado {
+  @include nota-parche(map-get($sitios,wiki), #cee4f207)
+}
